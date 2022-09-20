@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+        Form Input
+        </title>
+    </head>
+    <body>
+        <from action="<?= base_url().'kelas/aksi_simpan'; ?>" method="post">
+            <table border="0" align="center">
+                <tr>
+                    <th collspan='2'>FORM INPUT DATA KELAS</th>
+                </tr>
+                <tr>
+                    <td>NIM</td><td>:<input type="text" name="nim" value=""></td>
+                </tr>
+                <tr>
+                <td>Nama Lengkap</td><td>:<input type="text" name="nama" value=""></td>
+                </tr>
+                <td>Jurusan</td><td>:
+                    <select name="jurusan">
+                        <option value="IPA">Ilmu Pengetahuan Alam</option>
+                        <option value="IPS">Ilmu Pengetahuan Sosial</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alamat</td><td>:<textarea name="alamat" cols="10" rows="2"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Nama User</td><td>:<input type="text" name="nama user" value=""></td>
+                </tr>
+                <tr>
+                    <td>Password</td><td>:<input type="password" name="password" value=""></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="submit" value="Simpan">
+                        <input type="button" onclick="location.href='<?=base_url('kelas/index')?>'" value="kembali">
+                    </td>
+                </tr>
+            </table>
+    </body>
+</html>
